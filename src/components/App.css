@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Pale--blue: hsl(221, 100%, 96%);
+    --Light--lavender: hsl(241, 100%, 89%);
+    --Dark--gray--blue: hsl(224, 30%, 27%);
+    
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet--blue-circle: hsla(256, 72%, 46%, 0.4);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+    
+    --Light-red: hsla(0, 100%, 67%, 0.15);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green--teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+}
+
+body{
+    font-family: 'Arimo', sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.upper-container{
+    margin: 0 auto;
+    width: 67vh;
+    border-radius: 0 0 30px 30px;
+    height: 330px;
+    background: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+}
+
+.upper-container h1{
+    text-align: center;
+    font-size: 18px;
+    color: var(--Light--lavender);
+}
+.upper-heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.total-result{
+    width: 130px;
+    height: 130px;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: var(--Violet--blue-circle);
+    box-shadow:  17px px 10px ,
+             16px 16px 20px;
+}
+
+.total-result > p{
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--White);
+}
+
+.total-result p > span{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--Light--lavender);
+}
+
+.congratulations-message{
+    margin: 15px auto;
+    width: 100%;
+    max-width: 252px;
+}
+
+.congratulations-message > h2{
+    color: var(--White);
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.congratulations-message > p {
+    font-size: 15px;
+    color: var(--Light--lavender);
+}
+
+.lower-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+}
+
+.lower-container h3{
+    font-weight: 700;
+    color: var(--Dark--gray--blue);
+    margin: 10px auto;
+    text-align: left;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0 77px;
+}
+
+li{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    border: 1px solid var(--Light-red);
+    border-radius: 10px;
+    background-color: var(--Light-red);
+    width: 40vh;
+    height: 45px;
+    padding: 10px;
+    color: var(--Orangey-yellow);
+}
+
+.points{
+    color: var(--Green--teal);
+    font-weight: 800;
+}
+
+.points > span{
+    color: var(--Cobalt-blue);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.lower-container > button{
+    margin: 20px auto;
+    width: 100vh;
+    max-width: 250px;
+    height: 45px;
+    border: 1px solid var(--Dark--gray--blue);
+    border-radius: 40px;
+    background-color: var(--Dark--gray--blue);
+    color: #fff;
+    font-size: 15px;
+    transition: all .5s;
+}
+
+.lower-container > button:hover{
+    background: linear-gradient(to bottom, var(--Light-slate-blue-background), 
+    var(--Light-royal-blue-background));
+    border: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));;
+}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        flex-direction: row;
+        margin: 150px auto;
+        border-radius: 50px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  20px 20px 60px #727272,
+             -20px -20px 60px #ffffff;
+    }
+    .upper-container {
+        width: 100%;
+        max-width: 900px;
+        height: 436px;
+        border-radius: 30px;
+        padding: 40px ;
+      }
+      
+      .lower-container {
+        max-width: 1200px;
+      }       
+}
